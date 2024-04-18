@@ -1027,7 +1027,7 @@ do
             BackgroundColor3 = Color3.new(0, 0, 0);
             BorderColor3 = Color3.new(0, 0, 0);
             Size = UDim2.new(0, 28, 0, 15);
-            ZIndex = 6;
+            ZIndex = 3;
             Parent = ToggleLabel;
         });
 
@@ -1036,7 +1036,7 @@ do
             BorderColor3 = Library.OutlineColor;
             BorderMode = Enum.BorderMode.Inset;
             Size = UDim2.new(1, 0, 1, 0);
-            ZIndex = 7;
+            ZIndex = 4.5;
             Parent = PickOuter;
         });
 
@@ -1050,16 +1050,16 @@ do
             TextSize = 13;
             Text = Info.Default;
             TextWrapped = true;
-            ZIndex = 8;
+            ZIndex = 4;
             Parent = PickInner;
         });
 
         local ModeSelectOuter = Library:Create('Frame', {
             BorderColor3 = Color3.new(0, 0, 0);
             Position = UDim2.fromOffset(ToggleLabel.AbsolutePosition.X + ToggleLabel.AbsoluteSize.X + 4, ToggleLabel.AbsolutePosition.Y + 1);
-            Size = UDim2.new(0, 60, 0, 45 + 2);
+            Size = UDim2.new(0, 40, 0, 25 + 2);
             Visible = false;
-            ZIndex = 14;
+            ZIndex = 7;
             Parent = ScreenGui;
         });
 
@@ -1072,7 +1072,7 @@ do
             BorderColor3 = Library.OutlineColor;
             BorderMode = Enum.BorderMode.Inset;
             Size = UDim2.new(1, 0, 1, 0);
-            ZIndex = 15;
+            ZIndex = 7.5;
             Parent = ModeSelectOuter;
         });
 
