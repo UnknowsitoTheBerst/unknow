@@ -143,7 +143,7 @@ function Library:ApplyTextStroke(Inst)
 
     Library:Create('UIStroke', {
         Color = Color3.new(0, 0, 0);
-        Thickness = 1;
+        Thickness = 0.5;
         LineJoinMode = Enum.LineJoinMode.Miter;
         Parent = Inst;
     });
@@ -201,8 +201,8 @@ function Library:AddToolTip(InfoStr, HoverInstance)
         BackgroundColor3 = Library.MainColor,
         BorderColor3 = Library.OutlineColor,
 
-        Size = UDim2.fromOffset(X + 4, Y + 3),
-        ZIndex = 20,
+        Size = UDim2.fromOffset(X + 5, Y + 4),
+        ZIndex = 50,
         Parent = Library.ScreenGui,
 
         Visible = false,
