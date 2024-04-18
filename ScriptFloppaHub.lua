@@ -1092,7 +1092,7 @@ do
             Size = UDim2.new(1, 0, 0, 18);
             TextSize = 13;
             Visible = false;
-            ZIndex = 110;
+            ZIndex = 60;
             Parent = Library.KeybindContainer;
         },  true);
 
@@ -1107,7 +1107,7 @@ do
                 Size = UDim2.new(1, 0, 0, 15);
                 TextSize = 13;
                 Text = Mode;
-                ZIndex = 16;
+                ZIndex = 14;
                 Parent = ModeSelectInner;
             });
 
