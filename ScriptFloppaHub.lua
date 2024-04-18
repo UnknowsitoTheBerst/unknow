@@ -196,7 +196,7 @@ function Library:AddToolTip(InfoStr, HoverInstance)
         BorderColor3 = Library.OutlineColor,
 
         Size = UDim2.fromOffset(X + 5, Y + 4),
-        ZIndex = 50,
+        ZIndex = 40,
         Parent = Library.ScreenGui,
 
         Visible = false,
@@ -1092,7 +1092,7 @@ do
             Size = UDim2.new(1, 0, 0, 18);
             TextSize = 13;
             Visible = false;
-            ZIndex = 60;
+            ZIndex = 40;
             Parent = Library.KeybindContainer;
         },  true);
 
@@ -1107,7 +1107,7 @@ do
                 Size = UDim2.new(1, 0, 0, 15);
                 TextSize = 13;
                 Text = Mode;
-                ZIndex = 14;
+                ZIndex = 7;
                 Parent = ModeSelectInner;
             });
 
@@ -2699,7 +2699,7 @@ do
         BorderColor3 = Color3.new(0, 0, 0);
         Position = UDim2.new(0, 100, 0, -25);
         Size = UDim2.new(0, 213, 0, 20);
-        ZIndex = 200;
+        ZIndex = 100;
         Visible = false;
         Parent = ScreenGui;
     });
@@ -2709,7 +2709,7 @@ do
         BorderColor3 = Library.AccentColor;
         BorderMode = Enum.BorderMode.Inset;
         Size = UDim2.new(1, 0, 1, 0);
-        ZIndex = 201;
+        ZIndex = 100;
         Parent = WatermarkOuter;
     });
 
@@ -2722,7 +2722,7 @@ do
         BorderSizePixel = 0;
         Position = UDim2.new(0, 1, 0, 1);
         Size = UDim2.new(1, -2, 1, -2);
-        ZIndex = 202;
+        ZIndex = 100;
         Parent = WatermarkInner;
     });
 
@@ -2749,7 +2749,7 @@ do
         Size = UDim2.new(1, -4, 1, 0);
         TextSize = 14;
         TextXAlignment = Enum.TextXAlignment.Left;
-        ZIndex = 203;
+        ZIndex = 100;
         Parent = InnerFrame;
     });
 
@@ -2765,7 +2765,7 @@ do
         Position = UDim2.new(0, 10, 0.5, 0);
         Size = UDim2.new(0, 210, 0, 20);
         Visible = false;
-        ZIndex = 100;
+        ZIndex = 50;
         Parent = ScreenGui;
     });
 
@@ -2787,7 +2787,7 @@ do
         BackgroundColor3 = Library.AccentColor;
         BorderSizePixel = 0;
         Size = UDim2.new(1, 0, 0, 2);
-        ZIndex = 102;
+        ZIndex = 50;
         Parent = KeybindInner;
     });
 
@@ -2801,7 +2801,7 @@ do
         TextXAlignment = Enum.TextXAlignment.Left,
 
         Text = 'Keybinds';
-        ZIndex = 104;
+        ZIndex = 50;
         Parent = KeybindInner;
     });
 
@@ -2851,7 +2851,7 @@ function Library:Notify(Text, Time)
         Position = UDim2.new(0, 100, 0, 10);
         Size = UDim2.new(0, 0, 0, YSize);
         ClipsDescendants = true;
-        ZIndex = 100;
+        ZIndex = 50;
         Parent = Library.NotificationArea;
     });
 
@@ -2860,7 +2860,7 @@ function Library:Notify(Text, Time)
         BorderColor3 = Library.OutlineColor;
         BorderMode = Enum.BorderMode.Inset;
         Size = UDim2.new(1, 0, 1, 0);
-        ZIndex = 101;
+        ZIndex = 50;
         Parent = NotifyOuter;
     });
 
@@ -2874,7 +2874,7 @@ function Library:Notify(Text, Time)
         BorderSizePixel = 0;
         Position = UDim2.new(0, 1, 0, 1);
         Size = UDim2.new(1, -2, 1, -2);
-        ZIndex = 102;
+        ZIndex = 50;
         Parent = NotifyInner;
     });
 
