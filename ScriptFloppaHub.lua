@@ -3625,7 +3625,7 @@ local function OnPlayerChange()
         end;
     end;
 end;
-
+print("Helo kity")
 Players.PlayerAdded:Connect(OnPlayerChange);
 Players.PlayerRemoving:Connect(OnPlayerChange);
 
