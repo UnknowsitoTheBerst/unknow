@@ -118,12 +118,6 @@ function Library:SafeCallback(f, ...)
     end;
 end;
 
-function Library:AttemptSave()
-    if Library.SaveManager then
-        Library.SaveManager:Save();
-    end;
-end;
-
 function Library:Create(Class, Properties)
     local _Instance = Class;
 
