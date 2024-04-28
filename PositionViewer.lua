@@ -1,7 +1,3 @@
--- debug for studio --
-local parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
---                  --
-
 local httpService = game:GetService("HttpService")
 local tweenService = game:GetService("TweenService")
 local runService = game:GetService("RunService")
@@ -49,7 +45,7 @@ local function formatJSON(json)
 end
 
 
-local newUI = Instance.new("ScreenGui", parent)
+local newUI = Instance.new("ScreenGui", game.CoreGui)
 newUI.ResetOnSpawn = false
 -- Position handler --
 local positionText = createNewComponent("TextLabel", newUI, {
