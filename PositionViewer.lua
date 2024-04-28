@@ -120,7 +120,6 @@ local function createNewPosHolder(Number, Position)
 	removeButton.MouseButton1Click:Connect(function()
 		local found = positionTable[Number]
 		if found then
-			print(found)
 			positionTable[Number] = nil
 		end
 		count-=1
